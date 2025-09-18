@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KryptoPulse - Crypto Price & News Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-900 text-white font-inter">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold text-green-400">KryptoPulse</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Dashboard</a>
+                <a href="#" class="nav-link">Portfolio</a>
+                <a href="#" class="nav-link">News</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-4">
+            <div class="container mx-auto px-4 flex flex-col space-y-4">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Dashboard</a>
+                <a href="#" class="nav-link">Portfolio</a>
+                <a href="#" class="nav-link">News</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Track Crypto Prices & News in Real-Time</h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">Stay ahead of the market with our comprehensive cryptocurrency dashboard featuring live prices, portfolio tracking, and the latest news.</p>
+            <button class="cta-button bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Live Prices</h3>
+                    <p class="text-gray-400">Real-time cryptocurrency prices updated every minute with historical data and change indicators.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Portfolio Tracking</h3>
+                    <p class="text-gray-400">Track your investments with our powerful portfolio tools. Monitor gains, losses, and overall performance.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Latest News</h3>
+                    <p class="text-gray-400">Stay informed with the latest cryptocurrency news, market updates, and industry developments.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Trends & Charts</h3>
+                    <p class="text-gray-400">Advanced charting tools to analyze market trends, price movements, and trading volumes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart Placeholder Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Market Overview</h2>
+            <div class="chart-placeholder">
+                <div class="flex items-center justify-center">
+                    <p class="text-xl text-gray-400">Chart Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <p class="text-gray-400">&copy; 2025 KryptoPulse. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

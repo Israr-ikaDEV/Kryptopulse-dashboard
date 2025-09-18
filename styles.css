@@ -1,0 +1,110 @@
+/* Custom styles for KryptoPulse */
+
+:root {
+  --primary-color: #10B981;
+  --primary-hover: #34D399;
+  --dark-bg: #111827;
+  --dark-secondary: #1F2937;
+  --text-light: #F9FAFB;
+  --text-muted: #9CA3AF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+/* Navbar styles */
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+
+/* Button styles */
+.cta-button {
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+/* Feature cards */
+.feature-card {
+  background-color: var(--dark-secondary);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Chart placeholder */
+.chart-placeholder {
+  background-color: var(--dark-secondary);
+  border-radius: 0.75rem;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--text-muted);
+}
+
+/* Social links */
+.social-link {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+/* Mobile menu */
+#mobile-menu {
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .feature-card {
+    margin-bottom: 1.5rem;
+  }
+}
