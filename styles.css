@@ -1,8 +1,8 @@
 /* Custom styles for KryptoPulse */
 
 :root {
-  --primary-color: #10B981;
-  --primary-hover: #34D399;
+  --primary-color: #F0D163;
+  --primary-hover: #F6D667;
   --dark-bg: #111827;
   --dark-secondary: #1F2937;
   --text-light: #F9FAFB;
@@ -45,12 +45,13 @@ body {
 
 /* Button styles */
 .cta-button {
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 14px rgba(251, 193, 1, 0.674);
   transition: all 0.3s ease;
+  color: #1F2937;
 }
 
 .cta-button:hover {
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+  box-shadow: 0 6px 20px rgba(238, 242, 1, 0.801);
 }
 
 /* Feature cards */
