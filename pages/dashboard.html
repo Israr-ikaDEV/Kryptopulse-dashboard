@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KryptoPulse Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <a href="#" class="text-2xl font-bold text-green-400">
+                    <img src="../assets/KryptoPulse.png" alt="KryptoPulse Logo" class="w-100 h-10 logo-img">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="./dashboard.html" class="nav-link active">Dashboard</a>
+                <a href="./portfolio.html" class="nav-link">Portfolio</a>
+                <a href="./news.html" class="nav-link">News</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <main class="container mx-auto px-4 py-10">
+        <h1 class="text-3xl font-bold mb-8 text-center">📊 Dashboard Overview</h1>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <div class="dashboard-card">
+                <h2>Bitcoin (BTC)</h2>
+                <p class="text-green-400">$43,210</p>
+                <p class="text-sm text-gray-400">+2.5% Today</p>
+            </div>
+            <div class="dashboard-card">
+                <h2>Ethereum (ETH)</h2>
+                <p class="text-green-400">$3,100</p>
+                <p class="text-sm text-gray-400">+1.2% Today</p>
+            </div>
+            <div class="dashboard-card">
+                <h2>Portfolio Value</h2>
+                <p class="text-blue-400">$12,450</p>
+                <p class="text-sm text-gray-400">Last updated: now</p>
+            </div>
+            <div class="dashboard-card">
+                <h2>Top Gainer</h2>
+                <p class="text-yellow-400">Solana (SOL)</p>
+                <p class="text-sm text-gray-400">+5.7%</p>
+            </div>
+        </div>
+
+        <!-- Chart Placeholder -->
+        <section class="dashboard-chart mb-10">
+            <h2>📈 Market Trends</h2>
+            <div class="chart-placeholder">
+                <p class="text-gray-400">[ Chart Coming Soon ]</p>
+            </div>
+        </section>
+
+        <!-- News Placeholder -->
+        <section class="dashboard-news">
+            <h2>📰 Latest Crypto News</h2>
+            <ul>
+                <li>
+                    <a href="#">Bitcoin hits new highs amid market optimism</a>
+                    <p class="text-sm text-gray-400">Source: CoinTelegraph</p>
+                </li>
+                <li>
+                    <a href="#">Ethereum gas fees drop to lowest in months</a>
+                    <p class="text-sm text-gray-400">Source: Decrypt</p>
+                </li>
+                <li>
+                    <a href="#">New crypto regulations proposed in EU</a>
+                    <p class="text-sm text-gray-400">Source: CoinDesk</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <p class="text-gray-400">&copy; 2025 KryptoPulse. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

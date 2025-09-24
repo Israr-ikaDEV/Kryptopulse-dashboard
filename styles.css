@@ -109,3 +109,80 @@ body {
     margin-bottom: 1.5rem;
   }
 }
+
+/* ------------------------- */
+/* 📊 Dashboard Page Styles  */
+/* ------------------------- */
+
+/* Dashboard cards */
+.dashboard-card {
+  background-color: var(--dark-secondary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-card p {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Chart section */
+.dashboard-chart {
+  background-color: var(--dark-secondary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-chart h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* News section */
+.dashboard-news {
+  background-color: var(--dark-secondary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.dashboard-news h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dashboard-news li {
+  border-bottom: 1px solid #2D3748;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-news li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.dashboard-news a {
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.dashboard-news a:hover {
+  color: var(--primary-hover);
+}
